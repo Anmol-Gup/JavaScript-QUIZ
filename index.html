@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel='stylesheet' href='main.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <link rel='icon' href="quiz.jpg" type='image/x-icon' >
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #loading{
+            background-image: url('spin.svg');
+            width: 100%;
+            height: 100vh;
+            background-position: 50% 50%;
+            position: fixed;
+            z-index: 100;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body onload="loader()">
+    <div id="loading"></div>
+    <header>
+       <h1>Quiz</h1> 
+    </header><br><br>
+    <section class="container">
+        <div class="lang" id="html">
+            <h1>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+            </h1>
+            <button class="click">Start Quiz</button>
+        </div>
+        <div class="lang" id="css">
+            <h1>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+            </h1>
+            <button class="click">Start Quiz</button>
+        </div>
+        <div class="lang" id="javascript">
+            <h1>
+                <i class="devicon-javascript-plain colored"></i>
+            </h1>
+            <button class="click">Start Quiz</button>
+        </div>
+        <div class="lang" id="c">
+            <h1>
+                <i class="devicon-c-plain-wordmark colored"></i>
+            </h1>
+            <button class="click">Start Quiz</button>
+        </div>
+        <div class="lang" id="c++">
+            <h1>
+                <i class="devicon-cplusplus-plain-wordmark colored"></i>
+            </h1>
+            <button class="click">Start Quiz</button>
+        </div>
+        <div class="lang" id="java">
+            <h1>
+                <i class="devicon-java-plain-wordmark colored"></i>
+            </h1>
+            <button class="click">Start Quiz</button>
+        </div>
+        <div class="lang" id="python">
+            <h1>
+                <i class="devicon-python-plain-wordmark colored"></i>
+            </h1>
+            <button class="click">Start Quiz</button>
+        </div>
+        <div class="lang" id="php">
+            <h1>
+                <i class="devicon-php-plain colored"></i>
+            </h1>
+            <button class="click">Start Quiz</button>
+        </div>
+    </section>
+    <br><br>
+    <footer class="foot">
+        <hr>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script>. All Rights Reserved.</p>
+        <p>Made With &#10084;&#65039;
+            By Surya.
+        </p>
+        <p>
+            Image by <a href="https://pixabay.com/users/tumisu-148124/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2004314">Tumisu</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2004314">Pixabay</a>
+        </p>
+    </footer>
+    <script src='../js/index.js'></script>
+</body>
+<script>
+    let p=document.getElementById('loading');
+    
+    function loader()
+    {
+        p.style.display="none";
+    }
+</script>
+</html>
