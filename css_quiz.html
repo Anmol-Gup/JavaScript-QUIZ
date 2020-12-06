@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <link rel='icon' href='css3.png' type="images/x-icon">
+    <link rel="stylesheet" href='html_quiz.css'>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            CSS3 Quiz
+        </h1>
+        <a href='index.html' target="_blank">HOME</a>
+    </header>
+    <section class="container">
+        <div class="ques">
+            <p>
+                1. What does CSS stand for?  
+                <br> 
+                <input type='radio' value='css' id='ques1' name="css" required>&nbsp;<span>Cascading Style Sheet</span><br>
+                <input type='radio' value='a1'  class='ques1' name="css" required>&nbsp;<span>Computer Style Sheet</span><br>        
+                <input type='radio' value='a1' class='ques1' name="css" required>&nbsp;<span>Creative Style Sheet</span>        
+            </p><br>
+            <p>
+                2. Which tag is used to link external style sheet?<br>
+                <input type='radio' value='a2' class='ques2' name="link" required>&nbsp;<span>head tag</span><br>
+                <input type='radio' value='link' class='ques2' name="link" required>&nbsp;<span>link tag</span><br>        
+                <input type='radio' value='a2' class='ques2' name="link" required>&nbsp;<span>meta tag</span>
+            </p><br>
+            <p>
+                3. Which HTML tag is used to define an internal style sheet?
+                <br>
+                <input type='radio' value='a3' class='ques3' name="style" required>&nbsp;<span>head tag</span><br>
+                <input type='radio' value='style' class='ques3' name="style" required>&nbsp;<span>style tag</span><br>        
+                <input type='radio' value='a3' class='ques3' name="style" required>&nbsp;<span>link tag</span>
+            </p><br>
+            <p>
+                4.  Which HTML attribute is used to define inline styles?
+                <br>
+                <input type='radio' value='a4' class='ques4' name="style2" required>&nbsp;<span>styles</span><br>
+                <input type='radio' value='a4' class='ques4' name="style2" required>&nbsp;<span>font</span><br>        
+                <input type='radio' value='style2' class='ques4' name="style2" required>&nbsp;<span>style</span>
+            </p><br>
+            <p>
+                5. How do you insert a comment in a CSS file?
+                <br>
+                <input type='radio' value='a5' class='ques5' name="comment" required>&nbsp;<span>/* this ia a comment */</span><br>
+                <input type='radio' value='comment' class='ques5' name="comment" required>&nbsp;<span>// this ia a comment //</span><br>        
+                <input type='radio' value='a5' class='ques5' name="comment" required>&nbsp;<span>// this ia a comment </span>
+            </p>
+        </div><br>
+        <div class="click">
+            <button class='btn' onclick="myfun()">Submit</button><br>
+        </div>
+    </section><br><br><br>
+    <footer>
+        Image by <a href="https://pixabay.com/users/b3nj5m1n-5952967/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2582747">b3nj5m1n</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2582747">Pixabay</a>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="css_quiz.js"></script>
+</body>
+</html>
+    

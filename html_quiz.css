@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+html {
+  font-size: 62.5%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  margin-top: auto;
+  color: white;
+  background-color: black;
+  opacity: 0.7;
+}
+
+header {
+  background-color: tomato;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1rem;
+  text-shadow: 10px 13.36px 9.896px transparent,0 -2px 1px pink;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer a {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 280px) {
+  header {
+    height: 12vh;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+  a {
+    font-size: 1.8rem;
+    color: white;
+  }
+  .container {
+    height: 88vh;
+  }
+  .ques {
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .click {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .btn {
+    border: none;
+    background-color: #2b90e2;
+    color: white;
+    font-size: 1.5rem;
+    height: auto;
+    white-space: nowrap;
+    font-weight: 700;
+    width: 30%;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  footer {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  header {
+    height: 11vh;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  a {
+    font-size: 2rem;
+    color: white;
+  }
+  .container {
+    height: 89vh;
+  }
+  .ques {
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+  }
+  footer a, p {
+    font-size: 1.5rem;
+  }
+  .click {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+  }
+  .btn {
+    border: none;
+    background-color: #2b90e2;
+    color: white;
+    font-size: 1.7rem;
+    height: auto;
+    white-space: nowrap;
+    font-weight: 700;
+    width: 30%;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  footer {
+    margin-top: 28%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    height: 12vh;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  a {
+    font-size: 2.3rem;
+    color: white;
+  }
+  .click {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .btn {
+    border: none;
+    background-color: #2b90e2;
+    color: white;
+    font-size: 2rem;
+    height: auto;
+    white-space: nowrap;
+    font-weight: 700;
+    width: 20%;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 12vh;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  a {
+    font-size: 2.5rem;
+    color: white;
+  }
+  .container {
+    height: 88vh;
+  }
+  .ques {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+  }
+  .click {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+  }
+  .btn {
+    border: none;
+    background-color: #2b90e2;
+    color: white;
+    font-size: 2rem;
+    height: auto;
+    white-space: nowrap;
+    font-weight: 700;
+    width: 20%;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    height: 12vh;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  a {
+    font-size: 2.5rem;
+    color: white;
+  }
+  .container {
+    height: 88vh;
+  }
+  .ques {
+    font-size: 2.2rem;
+    padding: 2rem 1rem;
+  }
+  .click {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .btn {
+    border: none;
+    background-color: #2b90e2;
+    color: white;
+    font-size: 2rem;
+    height: auto;
+    white-space: nowrap;
+    font-weight: 700;
+    width: 15%;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    height: 12vh;
+  }
+  .container {
+    height: 88vh;
+  }
+  .ques {
+    padding: 1.5rem 1rem;
+  }
+  .ques p {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  a {
+    font-size: 2.5rem;
+    padding-right: 2rem;
+    color: white;
+  }
+  .click {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+  }
+  .btn {
+    border: none;
+    background-color: #2b90e2;
+    color: white;
+    font-size: 2rem;
+    height: auto;
+    white-space: nowrap;
+    font-weight: 700;
+    width: 10%;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=html_quiz.css.map */
