@@ -13,19 +13,9 @@
             margin: 0;
             box-sizing: border-box;
         }
-        #loading{
-            background-image: url('spin.svg');
-            width: 100%;
-            height: 100vh;
-            background-position: 50% 50%;
-            position: fixed;
-            z-index: 100;
-            background-repeat: no-repeat;
-        }
     </style>
 </head>
-<body onload="loader()">
-    <div id="loading"></div>
+<body>
     <header>
        <h1>Quiz</h1> 
     </header><br><br>
@@ -78,16 +68,8 @@
             </h1>
             <button class="click">Start Quiz</button>
         </div>
-        <br><br>
     </section>
-    <br><br><br>
+    <br/><br/><br/><br/><br/>
     <script src='index.js'></script>
 </body>
-<script>
-    let p=document.getElementById('loading');
-    function loader()
-    {
-        p.style.display="none";
-    }
-</script>
 </html>
