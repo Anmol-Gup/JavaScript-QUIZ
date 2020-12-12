@@ -2,13 +2,20 @@
 html {
   font-size: 62.5%;
   /* 1rem=10px */
+  height: 100%;
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -28,7 +35,24 @@ header {
   background-color: tomato;
   text-transform: uppercase;
   color: white;
+  width: 100%;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+footer {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  opacity: 0.9;
+  margin-top: auto;
+}
+
+footer p {
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
 .lang {
@@ -60,15 +84,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 88vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 @media screen and (min-width: 280px) and (max-width: 319px) {
   header {
-    height: 10vh;
+    height: 13vh;
+    width: 100vw;
     font-size: 2rem;
-    padding: 1rem 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     letter-spacing: 0.7rem;
   }
   .lang {
@@ -99,19 +126,29 @@ header {
     padding: 0.7rem;
   }
   section {
-    height: 88vh;
+    height: 87vh;
+  }
+  footer {
+    position: static;
+    bottom: 0;
+    text-align: center;
+  }
+  footer p {
+    font-size: 1.7rem;
   }
 }
 
 @media screen and (min-width: 320px) {
   header {
-    height: 11.5vh;
+    height: 12vh;
     font-size: 2.3rem;
-    padding: 1rem 1rem;
+    padding-top: 1rem;
+    line-height: 11.5vh;
+    text-align: center;
     letter-spacing: 0.8rem;
   }
   section {
-    height: 88.5vh;
+    height: 88vh;
   }
   .lang {
     font-size: 8rem;
@@ -140,9 +177,14 @@ header {
     padding: 1.2rem;
   }
   footer {
-    font-size: 2rem;
-    position: fixed;
+    position: static;
     bottom: 0;
+    padding: 0.5rem;
+    height: auto;
+    text-align: center;
+  }
+  footer p {
+    font-size: 2rem;
   }
 }
 
@@ -155,11 +197,6 @@ header {
   }
   section {
     height: 88vh;
-  }
-  footer {
-    height: 12vh;
-    position: fixed;
-    bottom: 0;
   }
 }
 
@@ -174,8 +211,13 @@ header {
     height: 88vh;
   }
   footer {
-    position: relative;
-    margin-top: auto;
+    position: static;
+    bottom: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+  footer p {
+    font-size: 2rem;
   }
 }
 
@@ -205,13 +247,13 @@ header {
 
 @media screen and (min-width: 1024px) {
   header {
-    height: 12vh;
-    font-size: 3.5rem;
-    padding: 1rem 1rem;
+    height: 13vh;
+    font-size: 3rem;
+    padding-top: 2rem;
     letter-spacing: 1rem;
   }
   section {
-    height: 88vh;
+    height: 87vh;
   }
   .lang {
     font-size: 9rem;
@@ -238,6 +280,15 @@ header {
     border-radius: 15px;
     padding: 1.2rem;
   }
+  footer {
+    position: static;
+    bottom: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+  footer p {
+    font-size: 2.7rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -259,13 +310,13 @@ header {
     margin: 3rem;
   }
   header {
-    height: 12vh;
+    height: 13vh;
     font-size: 3rem;
-    padding: 1rem 1rem;
+    padding-top: 1.5rem;
     letter-spacing: 1.5rem;
   }
   section {
-    height: 88vh;
+    height: 87vh;
   }
   .click {
     border: none;
